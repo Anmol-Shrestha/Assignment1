@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE MAKER</title>
+    <!-- CSS styling -->
+    <style>
+      h1 {
+        color: white;
+
+      }
+      body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background: #0c0c0c;
+       
+      }
+      form{
+        display: flex;
+        
+      }
+      input[type="number"] {
+        -moz-appearance: textfield; /* Firefox */
+        appearance: textfield; /* Standard */
+      }
+      input[type="number"] {
+        outline: none;
+      }
+      input {
+        background: black;
+        color: white;
+        padding: 0px 20px;
+        width: 300px;
+        height: 30px;
+        border: 1px solid rgb(15, 196, 213);
+        border-radius: 20px;
+      }
+
+      button {
+        padding: 5px 10px;
+        border: none;
+
+        color: aqua;
+        background: black;
+      }
+      table {
+        border-collapse: collapse;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      td {
+        width: 40px;
+        height: 20px;
+        padding: 20px;
+        border: 1px solid rgba(30, 179, 220, 0.5);
+        text-align: center;
+ 
+        color: white;
+      }
+      footer{
+        color: white;
+        display: flex;
+        gap:50px;
+        justify-content: space-between;
+        padding: 20px;
+        width: 1200px;
+        border-top: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Maker</h1>
+
+    <!-- Form Start -->
+    <!-- form has a function which updates the table onsubmit by assigning new count to newCount variable and by clearing the old table -->
+    <form onsubmit="updateTable(event)">
+      <!--  the input has id which is used as a reference to access the value of the input -->
+      <input id="inputNumber" type="number" />
+      <!--  After the value is accessed it gets stored in "newCount" variable -->
+      <button type="submit">CREATE TABLE</button>
+    </form>
+
+    <!-- Form End -->
+    <!--  Table Start -->
+    <table id="tbl"></table>
+    <!-- Table End -->
+<footer>
+ <p>copyright&#169;AnmolSagarShrestha <br> COMP125-Assignment 1 <br> Professor. Julio Vinicius Azevedo de Carvalho </p>
+ <p>Student ID: 301364068 <br> Software Engineering Technology - Artificial Intelligence</p>
+</footer>
+    <script src="./assignment1.js">
+
+      // Append text to an existing element
+    </script>
+  </body>
+</html>
